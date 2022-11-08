@@ -1,0 +1,159 @@
+@media (max-width: 1230px) {
+  .section {
+    width: 70%;
+    .icon {
+      top: 35%;
+    }
+    .img-div {
+      width: 50%;
+    }
+    .text-details {
+      width: 50%;
+      padding-right: 5rem;
+      ul {
+        .faq-list {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 970px) {
+  .section {
+    width: 85%;
+    .icon {
+      top: 38%;
+      left: -9%;
+    }
+    .img-div {
+      background: url(../images/bg-pattern-desktop.svg);
+      background-position: right 12vw top -44vh;
+      background-repeat: no-repeat;
+    }
+    .text-details {
+      padding-right: 3rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .section {
+    .icon {
+      top: 36%;
+      left: -9%;
+    }
+    .img-div {
+      background: url(../images/bg-pattern-desktop.svg);
+      background-position: right 12vw top -49vh;
+      background-repeat: no-repeat;
+    }
+    .text-details {
+      padding-right: 3rem;
+      margin-bottom: 3rem;
+      .heading {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .section {
+    .icon {
+      top: 32%;
+      left: -10%;
+    }
+    .img-div {
+      background: url(../images/bg-pattern-desktop.svg);
+      background-position: right 10vw top -51vh;
+      background-repeat: no-repeat;
+    }
+    .text-details {
+      padding-right: 1.5rem;
+      margin-bottom: 3rem;
+      .heading {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 499px) {
+  .main {
+    padding-top: 18rem;
+    .section {
+      flex-direction: column;
+      height: 80vh;
+      .img-div {
+        width: 100%;
+        background: url(../images/bg-pattern-mobile.svg);
+        background-position: left 15vw top 3vh;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 30%;
+        overflow: visible;
+
+        picture {
+          .main-bg {
+            top: -80%;
+            left: 11%;
+          }
+        }
+      }
+      .icon {
+        display: none;
+      }
+      .text-details {
+        width: 100%;
+        height: 80%;
+        padding: 0 1.5rem;
+        // margin-bottom: 2rem;
+        margin-top: -2rem;
+        text-align: center;
+        .heading {
+          margin: 0;
+          font-size: 4rem;
+        }
+        ul {
+          padding: 1.5rem;
+          .faq-list {
+            margin-bottom: 1rem;
+            &:last-child{
+              margin-bottom: 0;
+            }
+            .holder {
+              padding:.5rem 0;
+              .paragraph {
+                font-size: 1.6rem;
+              }
+            }
+            span {
+              font-size: 1.5rem;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 410px) {
+  .main {
+    .section {
+      .img-div {
+        background: url(../images/bg-pattern-mobile.svg);
+        background-position: left 55% top 17%;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 30%;
+        overflow: visible;
+        picture {
+          .main-bg {
+            top: -70% !important;
+            left: 10%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+@import "./reset";
+@import "./variables";
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    $Soft-violet-bg 10%,
+    $Soft-blue-bg 30%,
+    $Soft-blue-bg 50%
+  );
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.section {
+  display: flex;
+  margin-bottom: 2rem;
+  width: 62%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  .icon {
+    position: absolute;
+    top: 42%;
+    left: -10%;
+    z-index: 9999;
+  }
+
+  .img-div {
+    padding-top: 8rem;
+    width: 52%;
+    background: url(../images/bg-pattern-desktop.svg);
+    background-position: right 5vw top -39vh;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-x: hidden;
+
+    picture {
+      .main-bg {
+        position: absolute;
+        top: 12%;
+        left: -17%;
+        object-fit: cover;
+        height: fit-content;
+      }
+    }
+  }
+
+  .text-details {
+    width: 47%;
+    padding: 0 3rem 2rem 0;
+    margin-bottom: 6.4rem;
+
+    .heading {
+      font-size: 3rem;
+      font-weight: $font-weight-heading;
+      line-height: 1.5;
+      margin-bottom: 1.6rem;
+      margin-top: 5.6rem;
+      color: $Very-dark-desaturated-blue-text;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0.5rem;
+
+      .faq-list {
+        border-bottom: 0.2rem solid $Light-grayish-blue-divider;
+        padding: 1rem 0;
+        width: 92%;
+
+        .holder {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-right: 1rem;
+
+          .change {
+            width: fit-content;
+            height: 1rem;
+          }
+          .paragraph {
+            font-weight: $font-weight-text;
+            font-size: 1.4rem;
+            align-items: center;
+            padding: 1rem 1rem 1rem 0;
+            color: $Very-dark-grayish-blue-text;
+            cursor: pointer;
+            &:hover {
+              color: $Soft-red-text;
+            }
+            
+          }
+        }
+
+        span {
+          color: $Dark-grayish-blue-text;
+          font-size: 1.2rem;
+          padding: 1rem 2rem 1rem 0;
+          line-height: 1.4;
+          display: none;
+        }
+      }
+      .faq-list.active {
+        .holder {
+          .paragraph{
+            font-weight: $font-weight-heading;
+          }
+          .change {
+            transform: rotate(180deg);
+          }
+        }
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@import "./queries";
+
+.attribution {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.attribution a {
+  color: $Light-grayish-blue-divider;
+}
